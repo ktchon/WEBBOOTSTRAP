@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Về Chúng Tôi - ShopSport</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">
+          <i class="bi bi-bag-fill"></i> ShopSport
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Danh mục
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./Giaybongda.html"
+                    >Giày bóng đá</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Giày chạy bộ</a></li>
+                <li><a class="dropdown-item" href="#">Áo quần thể thao</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Sanpham.html">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Vechungtoi.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+
+          <div
+            class="d-flex flex-column flex-lg-row align-items-stretch gap-2 mt-3 mt-lg-0"
+          >
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Tìm kiếm"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="btn btn-light dropdown-toggle d-flex align-items-center justify-content-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-circle"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="./Dangnhap.html">Đăng nhập</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Dangky.html">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="./Giohang.html"
+              class="btn btn-warning d-flex align-items-center justify-content-center position-relative"
+              style="width: 44px; height: 44px"
+              aria-label="Giỏ hàng"
+            >
+              <i class="bi bi-cart-fill fs-5"></i>
+
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="cartItemCount"
+                >0
+                <span class="visually-hidden">sản phẩm trong giỏ</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-primary text-white p-5 text-center">
+      <h1 class="display-4 fw-bold">VỀ CHÚNG TÔI: SHOPSPORT</h1>
+      <p class="lead">ĐÁNH THỨC NHÀ VÔ ĐỊCH TRONG BẠN</p>
+    </div>
+
+    <div class="container my-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Câu Chuyện Của Chúng Tôi</h2>
+          <p class="text-muted">
+            Chào mừng bạn đến với <strong>ShopSport</strong>, ngôi nhà của những
+            người có chung tình yêu mãnh liệt với thể thao và khát khao chinh
+            phục những giới hạn mới. Chúng tôi không chỉ là một cửa hàng bán lẻ
+            đồ thể thao, chúng tôi là người đồng hành, người tiếp lửa trên mọi
+            hành trình tập luyện và thi đấu của bạn.
+          </p>
+          <p>
+            <strong>ShopSport</strong> được thành lập bởi một đội ngũ những
+            người đam mê thể thao, từ những vận động viên nghiệp dư cho đến các
+            huấn luyện viên chuyên nghiệp. Chúng tôi nhận ra rằng, để đạt được
+            hiệu suất tốt nhất, việc sở hữu những trang thiết bị chất lượng, phù
+            hợp và đúng tiêu chuẩn là yếu tố cực kỳ quan trọng.
+          </p>
+          <p>
+            Từ trăn trở đó, <strong>ShopSport</strong> đã ra đời với một mục
+            tiêu duy nhất:
+            <strong
+              >Trang bị cho mỗi người chơi thể thao những công cụ tốt nhất để họ
+              có thể tự tin vượt qua mọi thử thách và đánh thức nhà vô địch bên
+              trong mình.</strong
+            >
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="../IMG/doingu.png"
+            class="img-fluid rounded shadow"
+            alt="Đội ngũ ShopSport"
+          />
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <div class="row text-center mb-5">
+        <div class="col-md-6">
+          <div class="p-4">
+            <i class="bi bi-bullseye text-primary icon-lg mb-3"></i>
+            <h3 class="fw-bold">Sứ Mệnh (Our Mission)</h3>
+            <p class="lead">
+              "Nâng cao hiệu suất và truyền cảm hứng thể thao cho cộng đồng
+              thông qua việc cung cấp các sản phẩm chất lượng vượt trội và dịch
+              vụ tư vấn tận tâm."
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4">
+            <i class="bi bi-binoculars-fill text-primary icon-lg mb-3"></i>
+            <h3 class="fw-bold">Tầm Nhìn (Our Vision)</h3>
+            <p class="lead">
+              Trở thành thương hiệu cung cấp đồ thể thao được tin cậy và yêu
+              thích hàng đầu tại Việt Nam, xây dựng một cộng đồng nơi mọi người
+              tìm thấy niềm vui và động lực rèn luyện sức khỏe.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Giá Trị Cốt Lõi Của ShopSport</h2>
+        <p class="text-muted">
+          Chúng tôi vận hành dựa trên 5 giá trị cốt lõi, là kim chỉ nam cho mọi
+          hoạt động của mình.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-gem text-success icon-lg mb-3"></i>
+              <h5 class="card-title fw-bold">Chất lượng là Danh dự</h5>
+              <p class="card-text">
+                Mỗi sản phẩm đều được kiểm định nghiêm ngặt. Chúng tôi cam kết
+                chỉ bán hàng chính hãng, chất lượng tốt nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-people-fill text-info icon-lg mb-3"></i>
+              <h5 class="card-title fw-bold">Khách hàng là Trọng tâm</h5>
+              <p class="card-text">
+                Bạn là đồng đội. Đội ngũ chuyên gia luôn sẵn sàng lắng nghe và
+                tư vấn để bạn chọn được sản phẩm phù hợp nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-fire text-danger icon-lg mb-3"></i>
+              <h5 class="card-title fw-bold">Đam mê là Động lực</h5>
+              <p class="card-text">
+                Chúng tôi sống cùng thể thao, không ngừng cập nhật những công
+                nghệ và xu hướng mới nhất để phục vụ bạn.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-graph-up-arrow text-warning icon-lg mb-3"></i>
+              <h5 class="card-title fw-bold">Cộng đồng là Sức mạnh</h5>
+              <p class="card-text">
+                Chúng tôi kết nối những người yêu thể thao, tạo ra sân chơi để
+                chia sẻ kinh nghiệm và cùng nhau tiến bộ.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-shield-check text-dark icon-lg mb-3"></i>
+              <h5 class="card-title fw-bold">Chính trực là Nền tảng</h5>
+              <p class="card-text">
+                Mọi hoạt động kinh doanh đều dựa trên sự minh bạch, trung thực
+                và tôn trọng khách hàng.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <h2 class="fw-bold">Chúng Tôi Cung Cấp Những Gì?</h2>
+          <p>
+            Tại <strong>ShopSport</strong>, bạn có thể tìm thấy mọi thứ mình cần
+            cho hành trình thể thao của mình:
+          </p>
+          <ul>
+            <li>
+              <strong>Trang phục thể thao:</strong> Quần áo chuyên dụng cho chạy
+              bộ, gym, yoga, bóng đá, bóng rổ... với công nghệ thoáng khí, co
+              giãn.
+            </li>
+            <li>
+              <strong>Giày dép chuyên dụng:</strong> Từ giày chạy bộ, giày tập
+              gym đến giày đá bóng, đảm bảo an toàn và nâng đỡ tối ưu.
+            </li>
+            <li>
+              <strong>Dụng cụ & Phụ kiện:</strong> Vợt, bóng, tạ tay, thảm tập,
+              bình nước, băng đô, găng tay và hàng trăm phụ kiện khác.
+            </li>
+          </ul>
+          <p class="fw-bold fs-5 mt-4 text-center text-primary">
+            Hãy để ShopSport cùng bạn viết nên những câu chuyện chiến thắng của
+            riêng mình!
+          </p>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <img
+            src="../IMG/spcshop.png"
+            class="img-fluid rounded shadow"
+            alt="Sản phẩm tại ShopSport"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light pt-4 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Shop</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Tất cả sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Khuyến mãi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Dịch vụ</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Liên hệ</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Chính sách đổi trả</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Thông tin</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Điều khoản</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Kết nối</h5>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light" />
+        <p class="text-center">&copy; 2025 ShopSport. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

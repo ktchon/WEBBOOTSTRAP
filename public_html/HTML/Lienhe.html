@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ - YourSport</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">
+          <i class="bi bi-bag-fill"></i> ShopSport
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Danh mục
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./Giaybongda.html"
+                    >Giày bóng đá</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Giày chạy bộ</a></li>
+                <li><a class="dropdown-item" href="#">Áo quần thể thao</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Sanpham.html">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Vechungtoi.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+
+          <div
+            class="d-flex flex-column flex-lg-row align-items-stretch gap-2 mt-3 mt-lg-0"
+          >
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Tìm kiếm"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="btn btn-light dropdown-toggle d-flex align-items-center justify-content-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-circle"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="./Dangnhap.html">Đăng nhập</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Dangky.html">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="./Giohang.html"
+              class="btn btn-warning d-flex align-items-center justify-content-center position-relative"
+              style="width: 44px; height: 44px"
+              aria-label="Giỏ hàng"
+            >
+              <i class="bi bi-cart-fill fs-5"></i>
+
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="cartItemCount"
+                >0
+                <span class="visually-hidden">sản phẩm trong giỏ</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-primary text-white p-5 text-center">
+      <h1 class="display-4 fw-bold">LIÊN HỆ VỚI CHÚNG TÔI</h1>
+      <p class="lead">
+        Chúng tôi luôn sẵn sàng lắng nghe bạn. Đừng ngần ngại kết nối!
+      </p>
+    </div>
+
+    <div class="container my-5">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <h3 class="fw-bold mb-4">Thông tin liên hệ</h3>
+          <ul class="list-unstyled fs-5">
+            <li class="d-flex align-items-start mb-4">
+              <i class="bi bi-geo-alt-fill text-primary me-3 mt-1"></i>
+              <div>
+                <strong>Địa chỉ:</strong><br />
+                256 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ 900000, Việt
+                Nam
+              </div>
+            </li>
+            <li class="d-flex align-items-start mb-4">
+              <i class="bi bi-telephone-fill text-primary me-3 mt-1"></i>
+              <div>
+                <strong>Điện thoại:</strong><br />
+                <a href="tel:0987654321" class="text-dark text-decoration-none"
+                  >0904337370</a
+                >
+              </div>
+            </li>
+            <li class="d-flex align-items-start mb-4">
+              <i class="bi bi-envelope-fill text-primary me-3 mt-1"></i>
+              <div>
+                <strong>Email:</strong><br />
+                <a
+                  href="mailto:ktchonktpm2311045@student.ctuet.edu.vn"
+                  class="text-dark text-decoration-none"
+                  >ktchonktpm2311045@student.ctuet.edu.vn</a
+                >
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-clock-fill text-primary me-3 mt-1"></i>
+              <div>
+                <strong>Giờ mở cửa:</strong><br />
+                Thứ 2 - Chủ Nhật: 8:00 - 21:00
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-7">
+          <h3 class="fw-bold mb-4">Gửi tin nhắn cho chúng tôi</h3>
+          <form class="p-4 border rounded bg-light">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="contactName" class="form-label">Họ và tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  placeholder="Nguyễn Văn A"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="contactSubject" class="form-label">Chủ đề</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contactSubject"
+                placeholder="Hỗ trợ sản phẩm, Góp ý,..."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label"
+                >Nội dung tin nhắn</label
+              >
+              <textarea
+                class="form-control"
+                id="contactMessage"
+                rows="5"
+                placeholder="Nội dung bạn muốn gửi đến chúng tôi..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100">
+              Gửi Tin Nhắn
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <div class="text-center">
+        <h2 class="fw-bold mb-4">Tìm chúng tôi trên bản đồ</h2>
+      </div>
+
+      <div class="ratio ratio-16x9 rounded shadow">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6370299111727!2d105.7654703759393!3d10.046780690060995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0880f08006ffb%3A0x9a745510330faf4e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBL4bu5IHRodeG6rXQgLSBDw7RuZyBuZ2jhu4cgQ-G6p24gVGjGoQ!5e0!3m2!1svi!2s!4v1760532672711!5m2!1svi!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-dark text-light pt-4 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Shop</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Tất cả sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Khuyến mãi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Dịch vụ</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Liên hệ</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Chính sách đổi trả</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Thông tin</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Điều khoản</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Kết nối</h5>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light" />
+        <p class="text-center">&copy; 2025 ShopSport. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

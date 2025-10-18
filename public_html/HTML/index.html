@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../asset/css/bootstrap.min.css" />
+    <!-- ✅ Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <title>Trang chủ</title>
+  </head>
+  <body>
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">
+          <i class="bi bi-bag-fill"></i> ShopSport
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Danh mục
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./Giaybongda.html"
+                    >Giày bóng đá</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Giày chạy bộ</a></li>
+                <li><a class="dropdown-item" href="#">Áo quần thể thao</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Sanpham.html">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Vechungtoi.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+
+          <div
+            class="d-flex flex-column flex-lg-row align-items-stretch gap-2 mt-3 mt-lg-0"
+          >
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Tìm kiếm"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="btn btn-light dropdown-toggle d-flex align-items-center justify-content-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-circle"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="./Dangnhap.html">Đăng nhập</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Dangky.html">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="./Giohang.html"
+              class="btn btn-warning d-flex align-items-center justify-content-center position-relative"
+              style="width: 44px; height: 44px"
+              aria-label="Giỏ hàng"
+            >
+              <i class="bi bi-cart-fill fs-5"></i>
+
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="cartItemCount"
+                >0
+                <span class="visually-hidden">sản phẩm trong giỏ</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ✅ Hero Section -->
+    <div
+      id="heroCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../IMG/imagebanner1.png"
+            class="d-block w-100"
+            alt="Banner 1"
+            style="object-fit: cover; height: 500px"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="../IMG/imagebanner2.png"
+            class="d-block w-100"
+            alt="Banner 2"
+            style="object-fit: cover; height: 500px"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="../IMG/imagebanner3.png"
+            class="d-block w-100"
+            alt="Banner 3"
+            style="object-fit: cover; height: 500px"
+          />
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- ✅ Danh mục sản phẩm -->
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Danh mục sản phẩm</h2>
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+              <img
+                src="../IMG/image1.png"
+                class="card-img-top"
+                alt="Giày bóng đá"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Giày bóng đá</h5>
+                <a
+                  href="../HTML/Giaybongda.html"
+                  class="btn btn-outline-primary"
+                  >Xem</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+              <img
+                src="../IMG/image2.png"
+                class="card-img-top"
+                alt="Giày chạy bộ"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Giày chạy bộ</h5>
+                <a href="#" class="btn btn-outline-primary">Xem</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+              <img
+                src="../IMG/image3.png"
+                class="card-img-top"
+                alt="Áo thể thao"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Áo thể thao</h5>
+                <a href="#" class="btn btn-outline-primary">Xem</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+              <img
+                src="../IMG/image4.png"
+                class="card-img-top"
+                alt="Quần thể thao"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Quần thể thao</h5>
+                <a href="#" class="btn btn-outline-primary">Xem</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Sản phẩm nổi bật -->
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Sản phẩm nổi bật</h2>
+        <div class="row g-4">
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb1.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Nike Phantom 6 High Elite</h5>
+                <p class="text-danger fw-bold">8.349.000đ</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a
+                  href="../HTML/Chitietsanpham.html"
+                  class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb3.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Nike Vomero Premium</h5>
+                <p class="text-danger fw-bold">6.459.000₫</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb2.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Nike Mercurial Superfly</h5>
+                <p class="text-danger fw-bold">2.779.000đ</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb4.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Nike Pegasus Premium</h5>
+                <p class="text-danger fw-bold">6.179.000₫</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb5.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Quần ngắn Adidas</h5>
+                <p class="text-danger fw-bold">900.000đ</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb7.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Áo body tay ngắn</h5>
+                <p class="text-danger fw-bold">820.000đ</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb6.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Quần thun ngắn</h5>
+                <p class="text-danger fw-bold">700.000đ</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="../IMG/spnb8.png" class="card-img-top" alt="Product" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Áo thun tay ngắn</h5>
+                <p class="text-danger fw-bold">600.000đ</p>
+                <div class="text-warning mb-2 small">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-outline-success w-100"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ✅ Footer -->
+    <footer class="bg-dark text-light pt-4 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Shop</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Tất cả sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Khuyến mãi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Dịch vụ</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../HTML/Lienhe.html"
+                  class="text-light text-decoration-none"
+                  >Liên hệ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Chính sách đổi trả</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Thông tin</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Điều khoản</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Kết nối</h5>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light" />
+        <p class="text-center">&copy; 2025 ShopSport. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../../asset/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
